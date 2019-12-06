@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tamil</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Thambi&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    body{
+        font-family: 'Baloo Thambi', cursive; 
+    }
+    section{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        overflow: hidden;
+    }
+    section div{
+        position: relative;
+        width: 50%;
+        color: #ffffff;
+        
+        overflow: hidden;
+    }
+    section div:nth-child(1){
+        position: relative;
+        width: 50%;
+        color: #ffffff;
+        /* background: url('samuel.jpg'); */
+        background-size: cover;
+        overflow: hidden;
+    }
+    section div:nth-child(1) h2{
+        -webkit-text-stroke: 2px;
+        -webkit-text-stroke-color: #ffffff;
+        -webkit-text-fill-color: transparent;
+        left: 100%;
+    }
+    section div h2{
+        position: absolute;
+        white-space: nowrap;
+        font-size: 12em;
+        line-height: 100vh;
+        color: #ffffff;
+        animation: animate 60s linear infinite;
+    }
+    @keyframes animate{
+        0%{
+            transform: translateX(0);
+        }
+        100%{
+            transform: translateX(-100%);
+        }
+    }
+    @media only screen and (max-width: 600px) {
+        section div h2{
+        font-size: 20px;
+        color: #ffffff;
+        
+    }
+    } 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+
+    section div h2{
+        position: absolute;
+        white-space: nowrap;
+        font-size: 6em;
+        line-height: 100vh;
+        color: #ffffff;
+        animation: animate 60s linear infinite;
+    }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    section div h2{
+        position: absolute;
+        white-space: nowrap;
+        font-size: 9em;
+        line-height: 100vh;
+        color: #ffffff;
+        animation: animate 60s linear infinite;
+    }
+} 
+/* video */
+.wrapper{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .video-container{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index:-1;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    .video-container:after{
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0,.6);
+    }
+    .video-container video{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100vW;
+        height: 56.25vw;
+        min-width: 177.6vh;
+        min-height: 100vh;
+        transform: translate(-50%,-50%);
+    }
+    #home-overlay{
+            background-color: rgba(0, 0, 0, .9);
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index:1;
+        }
+
+    </style>
+</head>
+<body>
+        <div class="wrapper">
+                <div class="video-container">
+                    <video autoplay muted loop>
+                        <source src="Pexels (2).mp4" type="video/mp4" />
+                    </video>
+                </div>
+                </div>
+    <section>
+        <div>
+            <h2>வாழ்க்கை சொர்கமாவதும் நரகமாவதும் நம் எண்ணங்களை பொறுத்தே</h2>
+        </div>
+        <div>
+            <h2>வாழ்க்கை சொர்கமாவதும் நரகமாவதும் நம் எண்ணங்களை பொறுத்தே</h2>
+        </div>
+    </section>
+</body>
+</html>
